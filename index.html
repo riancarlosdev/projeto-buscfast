@@ -4,119 +4,83 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- font -->
     <link rel="preconnect" href="https://fonts.gstatic.com">
     <link href="https://fonts.googleapis.com/css2?family=Quando&family=Roboto:wght@100;300;500&display=swap" rel="stylesheet">
+    <!-- style -->
     <link rel="stylesheet" href="./CSS/style.css">
+    <!-- favicon -->
+    <link rel="apple-touch-icon" sizes="60x60" href="./assets/favicon/apple-icon-60x60.png">
+    <link rel="apple-touch-icon" sizes="72x72" href="./assets/favicon/apple-icon-72x72.png">
+    <link rel="apple-touch-icon" sizes="57x57" href="./assets/favicon/apple-icon-57x57.png">
+    <link rel="apple-touch-icon" sizes="76x76" href="./assets/favicon/apple-icon-76x76.png">
+    <link rel="apple-touch-icon" sizes="114x114" href="./assets/favicon/apple-icon-114x114.png">
+    <link rel="apple-touch-icon" sizes="120x120" href="./assets/favicon/apple-icon-120x120.png">
+    <link rel="apple-touch-icon" sizes="144x144" href="./assets/favicon/apple-icon-144x144.png">
+    <link rel="apple-touch-icon" sizes="152x152" href="./assets/favicon/apple-icon-152x152.png">
+    <link rel="apple-touch-icon" sizes="180x180" href="./assets/favicon/apple-icon-180x180.png">
+    <link rel="icon" type="image/png" sizes="192x192"  href="./assets/favicon/android-icon-192x192.png">
+    <link rel="icon" type="image/png" sizes="32x32" href="./assets/favicon/favicon-32x32.png">
+    <link rel="icon" type="image/png" sizes="96x96" href="./assets/favicon/favicon-96x96.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="./assets/favicon/favicon-16x16.png">
+    <link rel="manifest" href="./assets/favicon/manifest.json">
+    <meta name="msapplication-TileColor" content="#ffffff">
+    <meta name="msapplication-TileImage" content="./assets/favicon/ms-icon-144x144.png">
+    <meta name="theme-color" content="#ffffff">
     <title>BuscFast</title>
   </head>
   <body>
+    
+    <!-- header -->
     <header>
-      <div class="container">
-        <div class="logo">
-          <img src="./assets/logo.png" alt="">
-        </div>
-        <div class="pesquisa">
-          <div id="search"></div>
-        </div>
-        <div class="nav-bar">
-          <ul>
-            <li><i><img src="./assets/icons/vaadin_cart-o.svg" alt=""></i>Carrinho</li>
-            <li><i><img src="./assets/icons/vaadin_cart-o.svg" alt=""></i>Entrar</li>
-            <li><i><img src="./assets/icons/vaadin_cart-o.svg" alt=""></i>Sair</li>
-          </ul>
-        </div>
-      </div>
+      <div class="header">
+        <div class="container">
+          <div class="navegacao">
+            <div class="logo">
+              <img src="./assets/logo.png" alt="">
+            </div><!-- logo -->
+
+            <div class="search">
+              <input type="text" id="txtBusca" placeholder="Buscar..."/>
+              <img src="./assets/icons/search.svg" id="btnBusca" alt="Buscar"/>
+            </div><!-- search || busca -->
+
+            <div class="nav-usuario">
+              <ul class="lista">
+                <i><img src="./assets/icons/cart.svg" id="icon-cart"></i>
+                <li class="item">Carrinho</li>
+
+                <i><img src="./assets/icons/conta.svg" id="icon-conta"></i>
+                <li class="item">Conta</li>
+
+                <i><img src="./assets/icons/sair.svg" id="icon-sair"></i>
+                <li class="item">Sair</li>
+              </ul><!-- lista -->
+            </div><!-- nav usuario -->
+          </div><!-- navegação -->
+        </div><!-- container -->
+
+        <section class="menu">
+          <article class="links">
+            <a href="#">Alugueis de Residencia</a>
+            <a href="#">Restaurante</a>
+            <a href="#">Academias</a>
+            <a href="#">Lojas</a>
+            <a href="#">Noticias</a>
+            <a href="#">Mais...</a>
+          </article><!-- links -->
+        </section><!-- menu -->
+      </div><!-- header -->
+
+      <section class="banner">
+        <div class="banner-rotativo">
+          <img src="./assets/banner-1.jpg" alt="">
+        </div><!-- banner rotativo -->
+      </section><!-- banner -->
     </header>
+    <!-- end header -->
 
-    <main>
-      <div class="banner__1">
-        <img src="./assets/banner.jpg" alt="">
-      </div>
 
-      <div class="inf__section">
-        <h2>Saiba como contratar a BuscFast para cuidar das suas compras ! <a href="#">Saiba mais</a></h2>
-      </div>
-
-      <div class="ofertas-dia">
-        <div class="container">
-          <div class="box-produtos-ofertas">
-            <img src="./assets/produto-01.jpg" alt="">
-            <h2>Produto 01</h2>
-            <p>Descrição</p>
-            <h3>R$ 10,00</h3>
-          </div>
-
-          <div class="box-produtos-ofertas">
-            <img src="./assets/produto-01.jpg" alt="">
-            <h2>Produto 02</h2>
-            <p>Descrição</p>
-            <h3>R$ 10,00</h3>
-          </div>
-
-          <div class="box-produtos-ofertas">
-            <img src="./assets/produto-01.jpg" alt="">
-            <h2>Produto 03</h2>
-            <p>Descrição</p>
-            <h3>R$ 10,00</h3>
-          </div>
-
-          <div class="box-produtos-ofertas">
-            <img src="./assets/produto-01.jpg" alt="">
-            <h2>Produto 04</h2>
-            <p>Descrição</p>
-            <h3>R$ 10,00</h3>
-          </div>
-
-          <div class="box-produtos-ofertas">
-            <img src="./assets/produto-01.jpg" alt="">
-            <h2>Produto 05</h2>
-            <p>Descrição</p>
-            <h3>R$ 10,00</h3>
-          </div>
-
-          <div class="box-produtos-ofertas">
-            <img src="./assets/produto-01.jpg" alt="">
-            <h2>Produto 06</h2>
-            <p>Descrição</p>
-            <h3>R$ 10,00</h3>
-          </div>
-
-          <div class="box-produtos-ofertas">
-            <img src="./assets/produto-01.jpg" alt="">
-            <h2>Produto 01</h2>
-            <p>Descrição</p>
-            <h3>R$ 10,00</h3>
-          </div>
-        </div>
-      </div>
-
-      <div class="inf__section">
-        <h2>Na região</h2>
-      </div>
-
-      <div class="banner__2">
-        <img src="./assets/banner-2.jpg" alt="">
-      </div>
-
-      <div class="container">
-        <div class="anuncios">
-          <div class="anuncio">
-            <img src="./assets/anuncio-1.jpg" alt="">
-          </div>
-          <div class="anuncio">
-            <img src="./assets/anuncio-1.jpg" alt="">
-          </div>
-        </div>
-      </div>
-    </main>
-
-    <footer>
-      <div class="footer">
-        <div class="container">
-          <h1>FOOTER</h1>
-        </div>
-      </div>
-    </footer>
     <script src="./JS/main.js"></script>
   </body>
 </html>
