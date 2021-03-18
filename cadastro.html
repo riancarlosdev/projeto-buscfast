@@ -29,8 +29,8 @@
 <body>
   <!-- Header  -->
   <header id="header">
-    <div class="account-existing">
-      <a href="./login.html">
+    <div>
+      <a href="./login.html" class="account-existing">
         Entrar em conta existente
       </a>
     </div>
@@ -47,27 +47,29 @@
         <h6>É RÁPIDO E SEM COMPLICAÇÃO</h6>
       </div>
     </div>
-    <div class="formulario-bg">
+    <div class="container-form">
       <div class="form">
        
-        <div class="form-imput">
-          <form action="">
-            <label for="name">
-              <input type="text" placeholder="Nome">
-              <input type="text" placeholder="Sobrenome">
+        <div class="form-input">
+          <form action="" method="POST">
+            <label for="name"> Nome Completo:
+              <input type="text" placeholder="Nome" class="name">
+              <input type="text" placeholder="Sobrenome" class="name"><br>
             </label>
 
-            <label for="email">
-              <input type="email" name="" id="" placeholder="Digite seu email">
+            <label for="email"> E-mail:
+              <input type="email" name="" id="" placeholder="Digite seu email"><br>
             </label>
 
-            <label for="password">
-              <input type="password" name="" id="" placeholder="Digite uma senha">
-              <input type="password" name="" id="" placeholder="Digite a senha novamente">
+            <label for="password"> Senha:
+              <input type="password" name="" id="" placeholder="Digite uma senha" ><br>
+            </label>
+            <label for="confirm password">Confirmar senha:
+              <input type="password" name="" id="" placeholder="Digite a senha novamente"><br>
             </label>
 
-          <label for="nascimento">
-            <input type="date" name="" id="" plac>
+          <label for="nascimento">Data de nascimento:
+            <input type="date" name="" id="" ><br>
           </label>
           <p>
             Ao clicar em cadastre-se você concroda com nossos <a href=""> Termos</a> e que leu <a href="">nossa politica de uso de dados</a> incluindo nosso uso de <a href="">cookies</a>
@@ -85,6 +87,6 @@
     </div>
   </div>
 
-
+ <footer></footer>
 </body>
 </html>
