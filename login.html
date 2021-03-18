@@ -7,7 +7,7 @@
     <title>BuscFast</title>
     <!-- font -->
     <link rel="preconnect" href="https://fonts.gstatic.com">
-    <link href="https://fonts.googleapis.com/css2?family=Quando&family=Roboto:wght@100;300;500&display=swap"
+    <link href="https://fonts.googleapis.com/css2?family=Quando&family=Roboto:wght@100;300;500&display=swap"/>
     <!-- favicon -->
     <link rel="apple-touch-icon" sizes="60x60" href="./assets/favicon/apple-icon-60x60.png">
     <link rel="apple-touch-icon" sizes="72x72" href="./assets/favicon/apple-icon-72x72.png">
@@ -31,51 +31,32 @@
   </head>
   <body>
     <header>
-      <div id="top">
-        <a href="./cadastro.html">Criar nova conta</a>
+      <div class="header">
+        <a href="./cadastro.html" class="sing">Criar nova conta</a>
       </div><!-- top -->
     </header><!-- header -->
-
-    <main>
-
-      <div class="box__logo">
-        <div id="logo">
-          <a href="./index.html">
-            <img src="./assets/logo-2.png" alt="">
-          </a>
-        </div><!-- logo -->
-        <div class="estrarConta">
-          <h2>
-            Entrar em uma conta existente
-          </h2>
-        </div>
+    <section class="container">
+      <div class="feature">
+        <img src="/assets/logo-2.png" alt="" class="logo">
+        <h2>Entre em uma conta existente</h2>
       </div>
-      
-      <section id="formulario">
-        <div class="form">
-          <form action="">
-            <label class="infoText" for="">Email:</label><br>
-            <input class="inputText" type="text" placeholder="Digite seu Email"><br>
-
-            <label class="infoText" for="">Senha:</label><br>
-            <input class="inputText2" type="text" placeholder="Digite sua senha">
-
-            <div class="esqueceuSenha">
-              <a href="#">esqueceu a senha?</a>
-            </div>
-
-            <div class="btn__entrar">
-              <a href="#">Entrar</a>
-            </div>
-
-            <div class="cadastre-se">
-              <p><a href="./cadastro.html">Cadastre-se</a> na BuscFast</p>
-            </div>
+      <section class="form">
+        <div>
+          <form action="POST">
+            <label for="">E-mail:</label>
+            <input type="email" placeholder="Digite seu email" class="">
+            <label for="">Senha:</label>
+            <input type="password" placeholder="Digite sua senha" class="">
           </form>
-
-          
+          <span><a href="#">Esqueceu a senha</a></span>
+        </div>
+        <div class="button">
+          <a href="#">Entrar</a>
         </div>
       </section>
-    </main><!-- main -->
+    </section>
+    <footer>
+
+    </footer>
   </body>
 </html>
